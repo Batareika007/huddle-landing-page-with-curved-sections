@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url(../design/desktop-design.jpg);
+    /* background-image: url(../design/desktop-design.jpg); */
     background-repeat: no-repeat;
     background-position-x: center;
 }
@@ -8,7 +8,26 @@ body {
 
 main {
     max-width: 1440px;
-    height: 5518px;
+    /* height: 5518px; */
     border: solid 1px red;
     margin: 80px auto;
+}
+
+header {
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    position: absolute;
+    right: 1px;
+    margin-right: 80px;
+    padding: 8px 35px;
+    font-size: 14px;
+    border: 1px solid #FD53C0;
+    color: #FD53c0;
+    line-height: 14px;
+    /* box-sizing: border-box; */
+    border-radius: 15px;
 }
