@@ -1,33 +1,161 @@
+/* Global */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header_logo {
+    max-width: 100%;
+}
+
 body {
     margin: 0;
-    /* background-image: url(../design/desktop-design.jpg); */
-    background-repeat: no-repeat;
-    background-position-x: center;
+    background-color: rgb(241, 241, 241);
 }
 
-
-main {
+.container {
+    background-color: white;
     max-width: 1440px;
-    /* height: 5518px; */
-    border: solid 1px red;
-    margin: 80px auto;
+    margin: 0 auto;
 }
 
-header {
-    padding-left: 80px;
+
+.flexbox_space_between {
     display: flex;
     justify-content: space-between;
 }
 
+.flexbox_space_around {
+    display: flex;
+    justify-content: space-around;
+}
+
 .button {
-    position: absolute;
-    right: 1px;
-    margin-right: 80px;
     padding: 8px 35px;
     font-size: 14px;
-    border: 1px solid #FD53C0;
+    border: 2px solid #FD53C0;
     color: #FD53c0;
     line-height: 14px;
-    /* box-sizing: border-box; */
     border-radius: 15px;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #FD53C0;
+    cursor: pointer;
+}
+
+/* -------------- header ------------- */
+
+header {
+    padding: 50px 100px;
+}
+
+/* --------- Top section ------------ */
+
+.top_section {
+    text-align: center;
+}
+
+.top_section>h1 {
+    font-size: 3em;
+}
+
+.top_section_paragraph {
+    margin: 30px auto;
+    width: 30%;
+}
+
+.top_section_button {
+    padding: 15px 70px;
+    display: inline-block;
+    background-color: #FD53c0;
+    color: #fff;
+    border-radius: 55px;
+}
+
+.top_section_image {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    max-width: 65%;
+}
+
+/* ------- counting section ---------------- */
+
+.counting_section {
+    background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: space-around;
+}
+
+.counting_section_images {
+    width: 20%;
+}
+
+.counting_section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 5em;
+}
+
+/* ---------- section one ----------------- */
+
+.section_one {
+    background-color: hsl(207, 100%, 98%);
+    padding-top: 250px;
+}
+
+
+
+
+/* ---------- section two ----------------- */
+
+.section_two {
+    background-image: url(../images/bg-section-bottom-desktop-1.svg), url(../images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+}
+
+
+
+/* ---------- section three ----------------- */
+
+.section_three {
+    background-color: hsl(207, 100%, 98%);
+}
+
+
+
+/* ------------ bottom section ----------- */
+
+.bottom_section {
+    height: 400px;
+    text-align: center;
+    padding-top: 120px;
+    background-image: url(../images/bg-section-bottom-desktop-2.svg), url(../images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+}
+
+.bottom_section>h3 {
+    margin: 0;
+}
+
+/* ---------- footer section ------------ */
+
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
 }
