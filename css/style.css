@@ -42,7 +42,8 @@ h6 {
 
 .container {
     background-color: white;
-    /* min-width: 1440px; */
+    max-width: 1440px;
+    min-width: 1300px;
     margin: 0 auto;
 }
 
